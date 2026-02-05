@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* Opcional: estilos globales */
+body {
+  font-family: "Roboto", sans-serif !important;
+  background-color: var(--color-background);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --breakpoint-3xl: 1920px;
+  --color-avocado-100: oklch(0.99 0 0);
+  --color-avocado-200: oklch(40.471% 0.00324 106.767);
+  --color-avocado-300: oklch(0.94 0.11 115.03);
+  --color-background-dark: var(--color-black);
+  --color-background: var(--color-zinc-900);
+  --color-background-dark: var(--color-black);
+  --color-background-secondary: var(--color-zinc-900);
+  --color-primary: var(--color-green-600);
+  --color-primary-hover: var(--color-green-700);
+  --color-secondary: var(--color-gray-300);
+  --color-secondary-hover: var(--color-gray-400);
+  --text-color: #ffffff;
+}
+
+@theme {
+  --color-background: var(--color-gray-600);
+  --color-background-dark: var(--color-black);
+  --color-background-secondary: var(--color-zinc-600);
+  --color-primary: var(--color-green-600);
+  --color-primary-hover: var(--color-green-700);
+  --color-secondary: var(--color-gray-300);
+  --color-secondary-hover: var(--color-gray-400);
+  --text-color: #ffffff;
+  --border-color: var(--color-red-500);
+}
+
+.form-input {
+  font-style: italic;
+  background-color: var(--color-background-secondary);
+  color: var(--color-gray-300);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-white);
+    outline: none;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: #888888;
+    font-size: 14px;
+    font-style: italic;
+    opacity: 1;
+  }
+}
+
+.button-form {
+  background-color: var(--color-primary);
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+  letter-spacing: 3px;
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
